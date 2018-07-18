@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <com.teaanddogdog.floattagviewlib.FloatTagRecyclerView
+        android:layout_toLeftOf="@+id/right_tag"
+        android:id="@+id/top_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.teaanddogdog.floattagviewlib.FloatTagRecyclerView
+        android:id="@+id/left_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/top_tag"/>
+
+    <com.teaanddogdog.floattagviewlib.FloatTagRecyclerView
+        android:id="@+id/bottom_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/left_tag"/>
+
+    <com.teaanddogdog.floattagviewlib.FloatTagRecyclerView
+        android:id="@+id/right_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_tag"
+        android:layout_alignParentRight="true"
+        app:arrange_mode="V"/>
+
+
+</RelativeLayout>

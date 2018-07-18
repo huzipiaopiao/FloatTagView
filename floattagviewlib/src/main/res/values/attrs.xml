@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IndicatorBaseView">
+        <!--y方向隐藏的高度，仅在ZMTag是横向摆放时生效-->
+        <attr name="init_translate_y" format="dimension"/>
+        <!--x方向隐藏的宽度，仅在ZMTag是竖向摆放时生效-->
+        <attr name="init_translate_x" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatTagRecyclerView">
+        <!--摆放方向-->
+        <attr name="arrange_mode" format="enum">
+            <!--横向摆放-->
+            <enum name="H" value="1"/>
+            <!--竖向摆放-->
+            <enum name="V" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

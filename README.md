@@ -1,7 +1,7 @@
 # FloatTagView
 [ ![Download](https://api.bintray.com/packages/teadoglibrary/FloatTagView/FloatTagView/images/download.svg) ](https://bintray.com/teadoglibrary/FloatTagView/FloatTagView/_latestVersion)
 
-###类似最美App的底部Tag
+### 类似最美App的底部Tag
 
 ![演示](https://github.com/huzipiaopiao/FloatTagView/blob/master/img/ezgif.com-optimize.gif)
 
@@ -83,6 +83,7 @@ FloatTagRecyclerView的adapter的item：
 IndicatorBaseView提供了一个自定义属性`app:init_translate_y="40dp"`和`app:init_translate_x="-70dp"`，可以用来设置item开始默认隐藏的距离
 
 ## 3、说明：
+- IndicatorBaseView的点击事件，仅在IndicatorBaseView选中时（即IndicatorBaseView整个显示时），才会传递出来，其他情况都被FloatTagRecyclerView拦截使用了
 - 看下demo，很好理解的
 
 

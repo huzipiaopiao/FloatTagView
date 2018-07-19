@@ -2,6 +2,7 @@
 [ ![Download](https://api.bintray.com/packages/teadoglibrary/FloatTagView/FloatTagView/images/download.svg) ](https://bintray.com/teadoglibrary/FloatTagView/FloatTagView/_latestVersion)
 
 ###类似最美App的底部Tag
+![演示](https://github.com/huzipiaopiao/FloatTagView/blob/master/img/ezgif.com-optimize.gif)
 
 # 使用方法：
 ## 1、依赖配置

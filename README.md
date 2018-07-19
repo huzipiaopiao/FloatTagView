@@ -64,12 +64,17 @@ FloatTagRecyclerView的adapter的item：
     </com.teaanddogdog.floattagviewlib.indicator.HBottomIndicatorItemView>
 ```
 
-和原生的RecyclerView用法相同，只是Adapter中的item的根节点的view必须是IndicatorBaseView的子类；
+#### FloatTagRecyclerView和原生的RecyclerView用法相同，只是Adapter中的item的根节点的view必须是IndicatorBaseView的子类；
+
 且FloatTagRecyclerView提供了自定义属性，用来标示是横向还是竖向排列`app:arrange_mode="V"`，有V（竖向）和H（横向）两种模式，默认是横向模式；
+
 此模式仅供IndicatorBaseView识别用，不能用做设置RecyclerView的排列方式，具体见IndicatorBaseView的说明；
+
 使用了自定义属性，注意在根节点内添加：`xmlns:app="http://schemas.android.com/apk/res-auto"`
 
-库中已经默认有4种IndicatorBaseView的子类了，分别是上下左右四种，如果你要自己定义，参考他们自定义就好了：
+
+#### 库中已经默认有4种IndicatorBaseView的子类了，分别是上下左右四种，如果你要自己定义，参考他们自定义就好了：
+
 - （1）.HBottomIndicatorItemView:当布局是横向的在底部时，用这个view作为item的根布局，对应应该在FloatTagRecyclerView中设置模式`app:arrange_mode="H"`；
 - （2）.HTopIndicatorItemView:当布局是横向的在顶部时，用这个view作为item的根布局，对应应该在FloatTagRecyclerView中设置模式`app:arrange_mode="H"`；
 - （3）.VLeftIndicatorItemView:当布局是竖向的在左侧时，用这个view作为item的根布局，对应应该在FloatTagRecyclerView中设置模式`app:arrange_mode="V"`；

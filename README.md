@@ -9,18 +9,19 @@
 ## 1、依赖配置
 - 在项目最外面的build.gradle文件中，allprojects节点下的repositories中添加：
 
-        `maven { url  "https://dl.bintray.com/teadoglibrary/FloatTagView"  }`
+        maven { url  "https://dl.bintray.com/teadoglibrary/FloatTagView"  }
 
 - 再在app的build.gradle文件中，dependencies节点下添加，其中的版本建议根据最新版本修改：
 
-        `compile 'com.teaanddogdog:floattagviewlib:1.0.0'`
+        compile 'com.teaanddogdog:floattagviewlib:1.0.0'
 
 - 本库需要依赖Recyclerview使用，所以app的build.gradle文件中，dependencies节点下还要添加recyclerview的库，版本和你项目中support的版本相同便可：
 
-        `compile 'com.android.support:recyclerview-v7:25.3.1'`  
+        compile 'com.android.support:recyclerview-v7:25.3.1'
 
 ## 2、代码中使用
 
+展示界面添加以下布局
 ```
     <com.teaanddogdog.floattagviewlib.FloatTagRecyclerView
         android:id="@+id/left_tag"
@@ -63,7 +64,9 @@ FloatTagRecyclerView的adapter的item：
     </com.teaanddogdog.floattagviewlib.indicator.HBottomIndicatorItemView>
 ```
 
-和原生的RecyclerView用法相同，只是Adapter中的item的根节点的view必须是IndicatorBaseView的子类，且FloatTagRecyclerView提供了自定义属性，用来标示是横向还是竖向排列`app:arrange_mode="V"`，有V（竖向）和H（横向）两种模式，默认是横向模式：
+和原生的RecyclerView用法相同，只是Adapter中的item的根节点的view必须是IndicatorBaseView的子类；
+且FloatTagRecyclerView提供了自定义属性，用来标示是横向还是竖向排列`app:arrange_mode="V"`，有V（竖向）和H（横向）两种模式，默认是横向模式；
+此模式仅供IndicatorBaseView识别用，不能用做设置RecyclerView的排列方式，具体见IndicatorBaseView的说明；
 使用了自定义属性，注意在根节点内添加：`xmlns:app="http://schemas.android.com/apk/res-auto"`
 
 库中已经默认有4种IndicatorBaseView的子类了，分别是上下左右四种，如果你要自己定义，参考他们自定义就好了：
